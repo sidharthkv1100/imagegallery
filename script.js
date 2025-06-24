@@ -1,16 +1,18 @@
-const images = [
-  "7 series.jpg",
-  "a8.jpg",
-  "s class.jpg",
-  "cullinan.jpg",
-  ];
+const imageUrls = [
+  "https://picsum.photos/id/1015/400/300",
+  "https://picsum.photos/id/1016/400/300",
+  "https://picsum.photos/id/1020/400/300",
+  "https://picsum.photos/id/1024/400/300",
+  "https://picsum.photos/id/1027/400/300",
+  "https://picsum.photos/id/1035/400/300"
+];
 
-// Get the gallery container
 const gallery = document.getElementById("gallery");
 
-// Loop through the image list and create <img> elements
-images.forEach((url, index) => {
+imageUrls.forEach((url) => {
   const img = document.createElement("img");
-  img.src = https://github.com/sidharthkv1100/imagegallery;
+  img.src = url;
   gallery.appendChild(img);
 });
+
+};
